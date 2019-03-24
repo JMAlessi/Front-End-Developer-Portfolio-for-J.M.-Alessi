@@ -1,0 +1,206 @@
+/** Personal Portfolio by J.M. Alessi **/
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
+body{
+  background-color: #001133;
+  color: #EEE;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px #111, 0px 0px 9px #222, 0px 0px 3px #333;
+  text-align: center;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:link {
+  color: #EEE;
+}
+a:visited {
+  color: #EEE;
+}
+a:hover {
+  color: #AA0000;
+  text-decoration: none;
+}
+a:active {
+  color: #FF0000;
+}
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #002233;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px auto;
+  margin-right: 20px;
+}
+#ul2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px auto;
+  width: 1005px;
+}
+li {
+  list-style: none;
+}
+h1 {
+  font-size: 24px;
+  font-family: Merriweather, serif;
+}
+p {
+  text-align: justify;
+  text-indent: 30px;
+}
+#p2 {
+  text-align: center;
+  text-indent: 0px;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://i.postimg.cc/GmYCL3nM/Splash-BG-by-J-M-Alessi.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 55vh;  
+  padding-top: 45vh;
+}
+.projects-class {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #001133;
+  background-image: url("https://i.postimg.cc/ZnXbb4J4/Splash-BG-2-by-J-M-Alessi.jpg");
+  background-size: cover;
+}
+#projects2 {
+  padding: 20px 0px 25px 0px;
+}
+#projects3 {
+  padding: 1px 0px 40px 0px;
+  margin-bottom: 45px;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  background: #770000;
+  margin: 10px auto;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #EEE;
+  border-radius: 20px;
+  box-shadow: 5px 7px 9px #111, 0px 0px 13px #222, 0px 0px 7px #333;
+  filter: blur(3px);
+}
+.project-tile:hover {
+  background: #990000;
+  color: #EEE;
+  text-decoration: none;
+  filter: blur(0px);
+}
+.project-tile:active {
+  filter: blur(6px);
+}
+.thumbs {
+  width: 99%;
+  height: 91%;
+  margin: auto;
+  margin-top: 1px;
+  margin-bottom: -12px;
+  border: 2px solid #EEE;
+  border-radius: 20px;
+  filter: grayscale(25%);
+}
+#left {
+  margin: -15px auto;
+  margin-left: 150px;
+}
+#right {
+  margin: -15px auto;
+  margin-right: 180px;
+}
+#top-link {
+  font-size: 12px;
+  font-family: Merriweather, serif;
+  margin-right: 20px;
+  padding-top: 47px;
+  margin-bottom: -93px;
+}
+.bottom {
+  width: 100%;
+  height: 30px;
+  background-color: #002233;
+  padding-top: 1px;
+}
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px){
+    * {
+      margin: auto;
+    }
+    #navbar {
+      display: none;
+    }
+    #ul2 {
+      width: 647px;
+      margin-left: -30px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    .welcome {
+      width: 667px;
+      height: 70px;
+      padding-top: 3px;
+    }
+    .welcome h1 {
+      font-size: 26px;
+    }
+    .projects-class {
+      padding-top: 20px;
+      width: 667px;
+    }
+    #projects2 {
+      margin: auto;
+      margin-left: -5px;
+      margin-top: -5px;
+    }
+    #projects3 {
+      margin: auto;
+      margin-left: -5px;
+      padding-bottom: 30px;
+    }
+    .project-tile {
+      width: 240px;
+      height: 180px;
+      font-size: 14px;
+      filter: blur(0px);
+    }
+    .thumbs {
+      width: 98%;
+      height: 88%;
+    }
+    #left {
+      margin: auto;
+    }
+    #right {
+      margin: auto;
+    }
+    #top-link {
+      display: none;
+    }
+  .bottom {
+    width: 667px;
+    height: 30px;
+  }
+}
