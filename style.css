@@ -1,17 +1,30 @@
 /** Personal Portfolio by J.M. Alessi **/
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
-body{
-  background-color: #001133;
-  color: #EEE;
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 16px;
-  text-shadow: 2px 2px 5px #111, 0px 0px 9px #222, 0px 0px 3px #333;
-  text-align: center;
-  margin: auto;
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
+body {
+	background-color: #6499AA;
+	color: #EEE;
+	font: 16px ZCOOL XiaoWei, serif;
+	text-shadow: 2px 2px 5px #111, 0px 0px 9px #222, 0px 0px 3px #333;
+}
+h1 {
+  font: 24px Merriweather, serif;
+	text-shadow: 2px 2px 5px #111, 0px 0px 9px #222, 0px 0px 3px #333 !important;
+}
+p {
+	font-size: 16px;
+}
+.p2, .p3 {
+	font-size: 12px;
+}
+.p3 {
+	margin-top: 15px;
+}
+.margin {
+	margin-bottom: 30px;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
   font-weight: bold;
 }
 a:link {
@@ -25,182 +38,133 @@ a:hover {
   text-decoration: none;
 }
 a:active {
-  color: #FF0000;
+  color: #AA0000;
 }
-#navbar {
-  position: fixed;
-  width: 100%;
-  height: 30px;
-  background-color: #002233;
+.navbar {
+	background-color: #002233 !important;
 }
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 5px auto;
-  margin-right: 20px;
+.navbar .navbar-brand {
+  color: #EEE !important;
 }
-#ul2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 5px auto;
-  width: 1005px;
+.nav-link {
+	color: #EEE !important;
+	font: 16px ZCOOL XiaoWei, serif !important;
 }
-li {
-  list-style: none;
+.navbar-nav > li > .dropdown-menu {
+	background-color: #002233;
 }
-h1 {
-  font-size: 24px;
-  font-family: Merriweather, serif;
+.navbar-nav > li > .dropdown-menu > a:hover {
+	background-color: #6499AA;
 }
-p {
-  text-align: justify;
-  text-indent: 30px;
+.margin-top {
+	margin-top: 10px;
 }
-#p2 {
-  text-align: center;
-  text-indent: 0px;
-}
-.welcome {
-  display: flex;
-  flex-direction: column;
-  background-image: url("https://i.postimg.cc/GmYCL3nM/Splash-BG-by-J-M-Alessi.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 55vh;  
-  padding-top: 45vh;
-}
-.projects-class {
+header {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
   width: 100%;
-  background-color: #001133;
-  background-image: url("https://i.postimg.cc/ZnXbb4J4/Splash-BG-2-by-J-M-Alessi.jpg");
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+  position: relative;
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.intro {
+  line-height: 100vh;
+	color: #EEE;
+}
+.projects {
+	background-image: url("https://i.postimg.cc/GmYCL3nM/Splash-BG-by-J-M-Alessi.jpg");
   background-size: cover;
+	color: #EEE;
 }
-#projects2 {
-  padding: 20px 0px 25px 0px;
+.more {
+	background-color: #002233;
+	color: #EEE;
 }
-#projects3 {
-  padding: 1px 0px 40px 0px;
-  margin-bottom: 45px;
+.container-fluid {
+  padding: 70px 50px 70px 50px;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+  color: #AA0000 !important;
 }
 .project-tile {
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 200px;
-  background: #770000;
+  background: #002233;
   margin: 10px auto;
   padding: 10px 10px 10px 10px;
   text-align: center;
   font-size: 14px;
-  border: 1px solid #EEE;
+  border: 2px solid #EEE;
   border-radius: 20px;
   box-shadow: 5px 7px 9px #111, 0px 0px 13px #222, 0px 0px 7px #333;
-  filter: blur(3px);
 }
 .project-tile:hover {
   background: #990000;
   color: #EEE;
   text-decoration: none;
-  filter: blur(0px);
+  filter: blur(1px);
 }
 .project-tile:active {
-  filter: blur(6px);
+  filter: blur(3px);
 }
 .thumbs {
-  width: 99%;
-  height: 91%;
+  width: 89%;
+  height: 79%;
   margin: auto;
-  margin-top: 1px;
-  margin-bottom: -12px;
-  border: 2px solid #EEE;
+  margin-top: 10px;
+  margin-bottom: -5px;
+	border: 1px solid #EEE;
   border-radius: 20px;
   filter: grayscale(25%);
-}
-#left {
-  margin: -15px auto;
-  margin-left: 150px;
-}
-#right {
-  margin: -15px auto;
-  margin-right: 180px;
 }
 #top-link {
   font-size: 12px;
   font-family: Merriweather, serif;
-  margin-right: 20px;
-  padding-top: 47px;
-  margin-bottom: -93px;
+  padding-top: 45px;
 }
-.bottom {
-  width: 100%;
-  height: 30px;
-  background-color: #002233;
-  padding-top: 1px;
+#FCC-svg {
+	margin-top: -7px;
+	margin-bottom: 9px;
 }
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px){
-    * {
-      margin: auto;
-    }
-    #navbar {
-      display: none;
-    }
-    #ul2 {
-      width: 647px;
-      margin-left: -30px;
-    }
-    h1 {
-      font-size: 18px;
-    }
-    .welcome {
-      width: 667px;
-      height: 70px;
-      padding-top: 3px;
-    }
-    .welcome h1 {
-      font-size: 26px;
-    }
-    .projects-class {
-      padding-top: 20px;
-      width: 667px;
-    }
-    #projects2 {
-      margin: auto;
-      margin-left: -5px;
-      margin-top: -5px;
-    }
-    #projects3 {
-      margin: auto;
-      margin-left: -5px;
-      padding-bottom: 30px;
-    }
-    .project-tile {
-      width: 240px;
-      height: 180px;
-      font-size: 14px;
-      filter: blur(0px);
-    }
-    .thumbs {
-      width: 98%;
-      height: 88%;
-    }
-    #left {
-      margin: auto;
-    }
-    #right {
-      margin: auto;
-    }
-    #top-link {
-      display: none;
-    }
-  .bottom {
-    width: 667px;
-    height: 30px;
-  }
+.FCC-hover:hover {
+	background: #AA0000;
 }
