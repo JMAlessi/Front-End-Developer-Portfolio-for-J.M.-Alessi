@@ -41,7 +41,9 @@ a:active {
   color: #AA0000;
 }
 .navbar {
-	background-color: #002233 !important;
+  position: fixed;
+  width: 100%;
+  background-color: #002233 !important;
 }
 .navbar .navbar-brand {
   color: #EEE !important;
@@ -59,10 +61,13 @@ a:active {
 .margin-top {
 	margin-top: 10px;
 }
+.margin-40 {
+	margin-top: 40px;
+}
 header {
   position: relative;
-  background-color: black;
-  height: 75vh;
+  background-color: #6499AA;
+  height: 100vh !important;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -95,16 +100,19 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
-.intro {
-  line-height: 100vh;
-	color: #EEE;
+.welcome-css {
+  margin-top: 86px;
+  color: #EEE;
 }
-.projects {
+.logo {
+  
+}
+.projects-css {
 	background-image: url("https://i.postimg.cc/GmYCL3nM/Splash-BG-by-J-M-Alessi.jpg");
   background-size: cover;
-	color: #EEE;
+  color: #EEE;
 }
-.more {
+.more-css {
 	background-color: #002233;
 	color: #EEE;
 }

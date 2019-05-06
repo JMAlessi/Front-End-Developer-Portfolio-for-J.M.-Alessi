@@ -1,6 +1,6 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!--Personal Portfolio by J.M. Alessi-->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 	<div class="container">
 		<p class="navbar-brand margin-top" href="#">Portfolio for J.M. Alessi</p>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,10 +9,10 @@
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#intro-section">Intro</a>
+					<a class="nav-link" href="#welcome-section">Intro</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#projects-section">Projects</a>
+					<a class="nav-link" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="myNavbar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
@@ -26,7 +26,7 @@
 		</div>
 	</div>
 </nav>
-<header id="intro-section" class="container-fluid intro text-center">
+<header id="welcome-section" class="container-fluid welcome-css h-100 text-center">
 	<div class="overlay"></div>
 	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 		<source src="https://res.cloudinary.com/jmalessi/video/upload/v1557133264/video%20clips/clouds.mp4" type="video/mp4">
@@ -34,11 +34,12 @@
 	<div class="container h-100">
 		<div class="d-flex h-100 text-center align-items-center">
 			<img src="https://i.postimg.cc/gjHcqYGQ/JMAlessi-dev-logo.png" id="logo" class="img-fluid" style="display:inline" alt="J.M. Alessi - Front End Developer" width="360" height="360">
+      <h1>Hi, welcome to my portfolio! ☺</h1>
 		</div>
 	</div>
 </header>
-<div id="projects-section" class="container-fluid projects text-center">
-	<h1 class="margin">Here is an example of some of my work...</h1>
+<div id="projects" class="container-fluid projects-css text-center">
+	<h1 class="margin-40 margin">Here is an example of some of my work...</h1>
 	<br>
 	<div class="row">
 		<div class="col-md-4">
@@ -69,22 +70,22 @@
 		</div>
 	</div>
 </div>
-<footer id="more-section" class="container-fluid more text-center">
+<footer id="more" class="container-fluid more-css text-center">
 	<div class="row" style="margin-top: -50px;">
 		<div class="col-md-4">
-			<a href="https://freecodecamp.org/j.m.alessi" target="_blank" class="FCC-hover">
+			<a id="profile-link" href="https://freecodecamp.org/j.m.alessi" target="_blank" class="FCC-hover">
 				<img id="FCC-svg" src="https://svgshare.com/i/Csg.svg" width="50px" height="50px" alt="FCC Profile">
 				<p class="p2">FCC Profile</p>
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a href="https://codepen.io/jmalessi" target="_blank">
+			<a id="profile-link" href="https://codepen.io/jmalessi" target="_blank">
 				<i id="CodePen-svg" class="fab fa-codepen fa-3x" alt="CodePen Profile"></i>
 				<p class="p3">CodePen Profile</p>
 			</a>
 		</div>
 		<div class="col-md-4">
-			<a href="https://github.com/jmalessi" target="_blank">
+			<a id="profile-link" href="https://github.com/jmalessi" target="_blank">
 				<i id="GitHub-svg" class="fab fa-github fa-3x"></i>
 				<p class="p3">GitHub Profile</p>
 			</a>
