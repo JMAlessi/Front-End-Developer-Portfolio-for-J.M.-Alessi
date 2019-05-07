@@ -1,4 +1,4 @@
-/** Personal Portfolio by J.M. Alessi **/
+/*© 2019 J.M. Alessi.*/
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
 body {
@@ -66,20 +66,10 @@ a:active {
 }
 header {
   position: relative;
-  background-color: #6499AA;
-  height: 100vh !important;
-  min-height: 25rem;
-  width: 100%;
   overflow: hidden;
 }
 header video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
   z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -92,20 +82,25 @@ header .container {
 }
 header .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
   opacity: 0.5;
   z-index: 1;
 }
 .welcome-css {
-  margin-top: 86px;
+  margin-top: 15vh;
+  width: 100%;
+  height: 85vh;
   color: #EEE;
 }
-.logo {
-  
+#logo {
+  margin-right: auto;
+  width: 45%;
+  height: 45%;
+}
+#logo:hover {
+  filter: blur(4px);
+}
+.blur-text:hover {
+  filter: blur(2px);
 }
 .projects-css {
 	background-image: url("https://i.postimg.cc/GmYCL3nM/Splash-BG-by-J-M-Alessi.jpg");
@@ -149,10 +144,10 @@ header .overlay {
   background: #990000;
   color: #EEE;
   text-decoration: none;
-  filter: blur(1px);
+  filter: blur(2px);
 }
 .project-tile:active {
-  filter: blur(3px);
+  filter: blur(5px);
 }
 .thumbs {
   width: 89%;
@@ -173,6 +168,8 @@ header .overlay {
 	margin-top: -7px;
 	margin-bottom: 9px;
 }
-.FCC-hover:hover {
+#FCC-svg:hover {
 	background: #AA0000;
+  border-radius: 30px;
 }
+/*© 2019 J.M. Alessi.*/
