@@ -24,6 +24,12 @@ p {
 .margin {
 	margin-bottom: 30px;
 }
+.margin-top {
+	margin-top: 10px;
+}
+.margin-40 {
+	margin-top: 40px;
+}
 a {
 	text-decoration: none;
   font-weight: bold;
@@ -58,12 +64,6 @@ a:active {
 }
 .navbar-nav > li > .dropdown-menu > a:hover {
 	background-color: #6499AA;
-}
-.margin-top {
-	margin-top: 10px;
-}
-.margin-40 {
-	margin-top: 40px;
 }
 header {
   position: relative;
@@ -120,10 +120,6 @@ header .overlay {
   background-size: cover;
   color: #EEE;
 }
-.more-css {
-	background-color: #002233;
-	color: #EEE;
-}
 .container-fluid {
   padding: 70px 50px 70px 50px;
 }
@@ -176,6 +172,10 @@ header .overlay {
   font-size: 12px;
   font-family: Merriweather, serif;
   padding-top: 45px;
+}
+.more-css {
+	background-color: #002233;
+	color: #EEE;
 }
 #FCC-svg {
 	margin-top: -3px;
