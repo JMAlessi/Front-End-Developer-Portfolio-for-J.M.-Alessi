@@ -102,6 +102,7 @@ header .overlay {
 }
 .welcome-css {
   margin-top: 86px;
+	height: 100vh;
   color: #EEE;
 }
 #logo {
