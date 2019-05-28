@@ -118,8 +118,9 @@ header .overlay {
 }
 .projects-css {
 	background-image: url("https://i.postimg.cc/GmYCL3nM/Splash-BG-by-J-M-Alessi.jpg");
-  background-size: cover;
-  color: #EEE;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #EEE;
 }
 .container-fluid {
   padding: 70px 50px 70px 50px;
