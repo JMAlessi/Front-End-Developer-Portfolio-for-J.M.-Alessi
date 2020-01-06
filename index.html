@@ -1,5 +1,4 @@
 <!--Front End Developer Portfolio for J.M. Alessi-->
-<!--© 2019 J.M. Alessi.-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,73 +21,17 @@
     ></script>
     <title>Front End Developer Portfolio for J.M. Alessi</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
     <script>
       alert("Hi, how are you?");
       alert("Welcome to the official web portfolio for J.M. Alessi! ☺");
     </script>
-  </head>
-  <body>
     <nav
       id="navbar"
       class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
     >
-      <div class="container">
-        <p class="navbar-brand margin-top blur-text" href="#">
-          Portfolio for J.M. Alessi
-        </p>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNavbar"
-          aria-controls="myNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          &#x2630;
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#welcome-section">Intro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="myNavbar"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >More</a
-              >
-              <div class="dropdown-menu" aria-labelledby="myNavbar">
-                <a
-                  class="dropdown-item"
-                  href="https://freecodecamp.org/j.m.alessi"
-                  target="_blank"
-                  >FCC</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://gitlab.com/jalessi"
-                  target="_blank"
-                  >GitLab</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://github.com/jmalessi"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <?php include "navbar.html";?>
     </nav>
     <header
       id="welcome-section"
@@ -127,10 +70,7 @@
       <br />
       <div class="row">
         <div class="col-md-4">
-          <a
-            class="project-tile"
-            href="https://jmalessi.github.io/project-1/"
-            target="_self"
+          <a class="project-tile" href="projects/project-1/" target="_self"
             ><img
               class="thumbs"
               src="https://i.postimg.cc/g0wv759b/thumb-1.jpg"
@@ -143,12 +83,8 @@
             thumbnail to see more!
           </p>
         </div>
-
         <div class="col-md-4">
-          <a
-            class="project-tile"
-            href="https://jmalessi.github.io/project-2/"
-            target="_self"
+          <a class="project-tile" href="projects/project-2/" target="_self"
             ><img
               class="thumbs"
               src="https://i.postimg.cc/XvTw683G/thumb-2.jpg"
@@ -162,10 +98,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <a
-            class="project-tile"
-            href="https://jmalessi.github.io/project-3/"
-            target="_self"
+          <a class="project-tile" href="projects/project-3/" target="_self"
             ><img
               class="thumbs"
               src="https://i.postimg.cc/pdpbG3fH/thumb-3.jpg"
@@ -181,10 +114,7 @@
       </div>
       <div class="row" style="margin-top: 35px;">
         <div class="col-md-4">
-          <a
-            class="project-tile"
-            href="https://jmalessi.github.io/project-4/"
-            target="_self"
+          <a class="project-tile" href="projects/project-4/" target="_self"
             ><img
               class="thumbs"
               src="https://i.postimg.cc/mDC7LH2d/thumb-4.jpg"
@@ -219,48 +149,8 @@
         <a href="#top">Back to the top</a>
       </p>
     </div>
-    <footer id="more" class="container-fluid more-css text-center">
-      <div class="row" style="margin-top: -50px;">
-        <div class="col-md-4">
-          <a
-            id="profile-link"
-            href="https://freecodecamp.org/j.m.alessi"
-            target="_blank"
-          >
-            <img
-              id="FCC-svg"
-              src="imgs/FCCFire.svg"
-              width="50px"
-              height="50px"
-              alt="FCC Profile"
-            />
-            <p class="p2">FCC Profile</p>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a
-            id="profile-link"
-            href="https://gitlab.com/jalessi"
-            target="_blank"
-          >
-            <i class="fab fa-gitlab fa-3x" alt="GitLab Profile"></i>
-            <p class="p3">GitLab Profile</p>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a
-            id="profile-link"
-            href="https://github.com/jmalessi"
-            target="_blank"
-          >
-            <i class="fab fa-github fa-3x"></i>
-            <p class="p3">GitHub Profile</p>
-          </a>
-        </div>
-      </div>
-      <p style="font-size: 15px; padding-top: 25px; margin-bottom: -50px">
-        © 2019 J.M. Alessi.
-      </p>
+    <footer id="footer" class="container-fluid more-css text-center">
+      <?php include "footer.html";?>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -279,5 +169,4 @@
     ></script>
   </body>
 </html>
-<!--Front End Developer Portfolio for J.M. Alessi-->
-<!--© 2019 J.M. Alessi.-->
+<!--© 2019-2020 J.M. Alessi.-->
